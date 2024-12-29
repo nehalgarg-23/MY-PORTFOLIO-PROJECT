@@ -2,10 +2,7 @@
 
 Welcome to my personal 3D portfolio website built using React and Framer Motion! This portfolio showcases my projects, experience, and skills in a visually engaging way, leveraging modern web technologies and smooth animations.
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Technologies](#technologies)
+
 
 
 ## About

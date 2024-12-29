@@ -1,9 +1,11 @@
+/* Global Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* HTML and Body Styles */
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -18,12 +20,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: white;
 }
 
+/* Container Styles */
 .container {
+  width: 100%; /* Ensure full width on smaller screens */
   max-width: 1536px;
   padding-left: 16px;
   padding-right: 16px;
@@ -31,37 +36,69 @@ a {
   margin-right: auto;
 }
 
+/* Section Styles */
 section {
   height: 100vh;
   scroll-snap-align: center;
 }
 
+/* Mobile Optimization: Ensure full-width containers on small screens */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 12px;  /* Reduce padding for small devices */
+    padding-right: 12px;
+  }
+  body {
+    font-size: 14px; /* Adjust font size for better readability on mobile */
+  }
+}
+
+/* Tablet (Small Devices) */
 @media (min-width: 640px) {
   .container {
-    max-width: 640px;
+    max-width: 640px; /* Max width for small tablets and devices */
+  }
+  body {
+    font-size: 16px; /* Slightly increase font size for tablets */
   }
 }
 
+/* Tablet and Small Desktop */
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 768px; /* Max width for medium-sized devices */
+  }
+  body {
+    font-size: 16px; /* Maintain font size on medium screens */
   }
 }
 
+/* Larger Devices (Desktops and Large Tablets) */
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 1024px; /* Max width for tablets and small desktops */
+  }
+  body {
+    font-size: 18px; /* Adjust font size for large screens */
   }
 }
 
+/* Large Desktops */
 @media (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+    max-width: 1280px; /* Max width for large desktops */
+  }
+  body {
+    font-size: 18px;
   }
 }
 
+/* Extra Large Desktops */
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px;
+    max-width: 1536px; /* Max width for extra large screens */
+  }
+  body {
+    font-size: 20px; /* Adjust font size for very large screens */
   }
 }

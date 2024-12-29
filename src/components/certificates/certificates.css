@@ -1,0 +1,68 @@
+.certificatesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.certificatesSection {
+  width: 100%;
+  text-align: center;
+}
+
+.certificatesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.certificatesList img {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+/* Style for expanded images */
+.certificatesList img.expanded {
+  transform: scale(1.5); /* Enlarges the image */
+  z-index: 10; /* Bring expanded image to front */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.certificatesSection h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.certificatesSection p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1) rotate(0deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow at peak */
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow */
+  }
+}
+
+/* Applying animation on hover */
+.certificatesList img:hover {
+  animation: hoverEffect 0.6s ease-in-out; /* Apply hover animation */
+}

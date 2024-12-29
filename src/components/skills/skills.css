@@ -1,0 +1,114 @@
+.skills {
+  height: 600vh;
+  position: relative;
+}
+
+.sList {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  width: max-content;
+}
+
+.sItem {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Background gradient effects for skill sections */
+.sItem:nth-child(1) {
+  background: linear-gradient(to right, #0b132b, #1c2541);
+}
+
+.sItem:nth-child(2) {
+  background: linear-gradient(to right, #1c2541, #3a506b);
+}
+
+.sItem:nth-child(3) {
+  background: linear-gradient(to right, #3a506b, #5bc0be);
+}
+
+.sItem:nth-child(4) {
+  background: linear-gradient(to right, #5bc0be, #0b132b);
+}
+
+.sItem:nth-child(5) {
+  background: linear-gradient(to right, #0b132b, transparent);
+}
+
+.sProgress {
+  position: sticky;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  bottom: 80%;
+}
+
+.sImg {
+  width: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sImg img {
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.sText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sText h1 {
+  font-size: 70px;
+}
+
+.sText p {
+  font-size: 24px; /* Increase the font size for paragraphs */
+  font-weight: 300;
+}
+
+@media (max-width: 1536px) {
+  .sItem {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .sText h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sItem {
+    flex-direction: column;
+  }
+
+  .sImg,
+  .sText {
+    width: 80%;
+  }
+
+  .sProgress {
+    bottom: 100px;
+    left: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sProgress {
+    width: 50px;
+    height: 50px;
+  }
+}

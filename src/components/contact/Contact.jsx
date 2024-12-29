@@ -81,8 +81,8 @@ const Contact = () => {
               type="tel"
               name="user_phone"
               id="phone"
-              placeholder=" 91+ 8608346408"
-              defaultValue="91+ 8608346408"
+              placeholder=" +91 8608346408"
+              defaultValue="+91 8608346408"
               readOnly
             />
           </motion.div>

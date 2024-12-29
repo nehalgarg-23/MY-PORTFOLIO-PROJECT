@@ -2,8 +2,7 @@
 
 Welcome to my personal 3D portfolio website built using React and Framer Motion! This portfolio showcases my projects, experience, and skills in a visually engaging way, leveraging modern web technologies and smooth animations.
 
-
-
+You can view the live portfolio here: [Nehal Garg Portfolio](https://my-portfolio-ng.vercel.app/)
 
 ## About
 
@@ -21,7 +20,3 @@ This project utilizes the following technologies:
 - **Framer Motion**: A library for adding smooth animations to React components.
 - **CSS**: Used for styling and creating visually appealing layouts.
 - **Three.js** (or similar): To render and display 3D models on the website.
-- **EmailJS** (optional): Integrated for sending messages from the contact form.
-
-
-
